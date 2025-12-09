@@ -4,6 +4,7 @@ A região potiguar vai ser o tema do meu projeto. Com enfoque maior nas cidades 
 Até o momento o site será estruturado dessa maneira:
 📁 guia-potiguar
 ── index.html
+── 📁 css
 ── style.css
 ── README.md
 ── 📁 img
