@@ -1,4 +1,6 @@
-
+/* ------------------------------
+   RESET E CONFIGURAÇÃO GLOBAL
+--------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +17,15 @@ body {
     min-height: 100vh;
 }
 
+/* Todas imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+/* ------------------------------
+   NAVEGAÇÃO
+--------------------------------*/
 nav {
     display: flex;
     justify-content: center;
@@ -38,7 +48,9 @@ nav a:hover {
     color: #e0f7e0;
 }
 
-
+/* ------------------------------
+   CABEÇALHO
+--------------------------------*/
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -50,31 +62,22 @@ header p {
     margin-bottom: 20px;
 }
 
-.destaque figure {
-    margin: 0 auto 30px auto;
-    text-align: center;
-}
-
-.destaque img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-figcaption {
-    margin-top: 10px;
-    font-style: italic;
-    color: #555;
-}
-
-
-section {
+/* ------------------------------
+   SEÇÕES E TIPOGRAFIA
+--------------------------------*/
+section,
+aside {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #ffffffcc;
     border-radius: 10px;
+    background-color: #ffffffcc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+aside {
+    margin-top: 30px;
+    background-color: #e0f7e0;
+    border-left: 5px solid #4CAF50;
 }
 
 h2 {
@@ -82,16 +85,17 @@ h2 {
     margin-bottom: 15px;
 }
 
-
+/* ------------------------------
+   LISTAS
+--------------------------------*/
 ul {
     list-style: none;
     padding-left: 0;
 }
 
 ul li {
-    padding: 8px 0;
+    padding: 8px 0 8px 25px;
     position: relative;
-    padding-left: 25px;
 }
 
 ul li::before {
@@ -102,38 +106,66 @@ ul li::before {
     font-weight: bold;
 }
 
-.botao {
+/* ------------------------------
+   IMAGENS EM DESTAQUE
+--------------------------------*/
+.destaque figure {
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.destaque img {
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* ------------------------------
+   BOTÕES
+--------------------------------*/
+.botao,
+button[type="submit"] {
     display: inline-block;
-    margin: 10px;
     padding: 12px 25px;
-    background-color: #228B22;
-    color: white;
-    text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
     transition: 0.3s;
+    cursor: pointer;
+}
+
+.botao {
+    margin: 10px;
+    background-color: #228B22;
+    color: white;
+    text-decoration: none;
 }
 
 .botao:hover {
     background-color: #006400;
 }
 
+/* ------------------------------
+   TABELAS
+--------------------------------*/
 .tabela-atracoes {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin: 20px 0;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .tabela-atracoes caption {
-    caption-side: top;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
     color: #333;
-    text-align: center;
 }
 
 .tabela-atracoes thead {
@@ -141,14 +173,9 @@ ul li::before {
     color: #fff;
 }
 
-.tabela-atracoes thead th {
+.tabela-atracoes th,
+.tabela-atracoes td {
     padding: 12px;
-    font-size: 16px;
-}
-
-.tabela-atracoes tbody td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
 }
 
 .tabela-atracoes tbody tr:nth-child(even) {
@@ -157,18 +184,84 @@ ul li::before {
 
 .tabela-atracoes tbody tr:hover {
     background-color: #eaf2ff;
-    transition: 0.3s;
 }
 
-aside {
-    margin-top: 30px;
+/* ------------------------------
+   FORMULÁRIOS
+--------------------------------*/
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid #4CAF50;
     padding: 20px;
-    background-color: #e0f7e0;
-    border-left: 5px solid #4CAF50;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: #ffffffdd;
 }
 
+legend {
+    font-weight: bold;
+    color: #2E8B57;
+    padding: 0 10px;
+}
 
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: 0.2s linear;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76,175,80,0.4);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #2E8B57;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background: #256b47;
+    transform: scale(1.03);
+}
+
+/* ------------------------------
+   RODAPÉ
+--------------------------------*/
 footer {
     text-align: center;
     padding: 20px;
@@ -178,7 +271,9 @@ footer {
     border-radius: 8px;
 }
 
-
+/* ------------------------------
+   RESPONSIVIDADE
+--------------------------------*/
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -188,4 +283,31 @@ footer {
     header h1 {
         font-size: 2rem;
     }
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffffcc;
+    padding: 20px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #f7fff7;
+}
+.card img {
+    width: 100%;
+    height: 170px; /* ou o valor que preferir */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
