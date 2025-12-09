@@ -4,77 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugares para Visitar</title>
-    <link rel="stylesheet" href="/style.css">
-
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
 <nav>
     <a href="../index.html">🏠 Início</a>
-    <a href="contextualizando.html">📜 História</a>
-    <a href="contato.html">📍 Entre em contato</a>
-
+    <a href="contextualizando.html">📜 Contextualizando</a>
+    <a href="lugares.html">📍 Lugares para Visitar</a>
+    <a href="contato.html">✉ Contato</a>
 </nav>
 
-<h1>Lugares para se Visitar</h1>
-<ul>
-    <li>Genipabu e suas dunas</li>
-    <li>Praia de Ponta Negra</li>
-    <li>Forte dos Reis Magos</li>
-    <li>Serra de Martins</li>
-</ul>
+<header>
+    <h1>🌴 Roteiro Encantado pelo Rio Grande do Norte</h1>
+    <p>Descubra paisagens que unem praias paradisíacas, dunas douradas, serras frias e monumentos históricos.
+       Escolha seu estilo de aventura e conheça o melhor do RN!</p>
+</header>
+
+<!-- 🌅 Praias -->
 <section>
-    <h2>Informações das Atrações</h2>
-  
+  <h2>🌅 Para quem ama praias</h2>
+
+  <div class="cards">
+      <article class="card">
+          <img src="../img/praia-de-ponta-negra.jpg" alt="Praia de Ponta Negra">
+          <h3>Praia de Ponta Negra</h3>
+          <p>Cartão-postal de Natal, com o famoso Morro do Careca.</p>
+      </article>
+
+      <article class="card">
+          <img src="../img/pipa.jpg" alt="Praia da Pipa">
+          <h3>Praia da Pipa</h3>
+          <p>Falésias, golfinhos e um pôr do sol inesquecível.</p>
+      </article>
+
+      <article class="card">
+          <img src="../img/Praia-de-Genipabu-scaled.jpg" alt="Dunas de Genipabu">
+          <h3>Genipabu</h3>
+          <p>Dunas e lagoas com passeios de buggy emocionantes.</p>
+      </article>
+  </div>
+</section>
+
+<!-- 🏰 História -->
+<section>
+  <h2>🏰 Para quem ama história</h2>
+
+  <div class="cards">
+      <article class="card">
+          <img src="../img/fortereis.jpg" alt="Forte dos Reis Magos">
+          <h3>Forte dos Reis Magos</h3>
+          <p>Construção do período colonial com vista panorâmica para o litoral.</p>
+      </article>
+
+      <article class="card">
+          <img src="../img/centrohistorico.jpg" alt="Centro Histórico de Natal">
+          <h3>Centro Histórico de Natal</h3>
+          <p>Ruas antigas, museus e arquitetura marcada por séculos de história.</p>
+      </article>
+      <article class="card">
+
+        <img src="../img/museu.jpg" alt="Museu Histórico">
+        <h3>Museu Histórico Lauro da Escóssia</h3>
+        <p>Conta a história da abolição local, a primeira cidade a libertar escravizados — antes da Lei Áurea</p>
+    </article>
+  </div>
+</section>
+
+<!-- ⛰ Natureza -->
+<section>
+  <h2>⛰ Aventuras na natureza</h2>
+
+  <div class="cards">
+      <article class="card">
+          <img src="../img/serra-martins.png" alt="Serra de Martins">
+          <h3>Serra de Martins</h3>
+          <p>Clima frio, mirantes e trilhas com vistas deslumbrantes.</p>
+      </article>
+
+      <article class="card">
+          <img src="../img/parque-das-dunas.jpg" alt="Parque das Dunas">
+          <h3>Parque das Dunas</h3>
+          <p>A maior reserva de mata atlântica nativa em área urbana do Brasil.</p>
+      </article>
+  </div>
+</section>
+
+<!-- 📊 Tabela comparativa -->
+<section>
+    <h2>📊 Comparativo dos Destinos</h2>
+
     <table class="tabela-atracoes">
-      <caption>🗺️ Tabela de Atrações Culturais do RN</caption>
-  
-      <colgroup>
-        <col style="background-color:#f0f8ff;">
-        <col style="background-color:#fafafa;">
-        <col style="background-color:#f9f9f9;">
-        <col style="background-color:#f0f8ff;">
-      </colgroup>
-  
-      <thead>
-        <tr>
-          <th>Local</th>
-          <th>Endereço</th>
-          <th>Horário de Funcionamento</th>
-          <th>Preço</th>
-        </tr>
-      </thead>
-  
-      <tbody>
-        <tr>
-          <td>Forte dos Reis Magos</td>
-          <td>Avenida Pres. Café Filho, Natal</td>
-          <td>08h - 16h</td>
-          <td>R$ 10,00</td>
-        </tr>
-        <tr>
-          <td>Dunas de Genipabu</td>
-          <td>Extremoz - RN</td>
-          <td>08h - 17h</td>
-          <td>R$ 80,00 (passeio de buggy)</td>
-        </tr>
-        <tr>
-          <td>Cajueiro de Pirangi</td>
-          <td>Pirangi do Norte - RN</td>
-          <td>07h30 - 17h30</td>
-          <td>R$ 8,00</td>
-        </tr>
-        <tr>
-          <td>Praia de Pipa</td>
-          <td>Tibau do Sul - RN</td>
-          <td>Livre</td>
-          <td>Gratuito</td>
-        </tr>
-      </tbody>
+        <thead>
+            <tr>
+                <th>Local</th>
+                <th>Tipo</th>
+                <th>Ideal para</th>
+                <th>Aventura</th>
+                <th>Custo médio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pipa</td>
+                <td>Praia</td>
+                <td>Fotografia e paisagens</td>
+                <td>Médio</td>
+                <td>Moderado</td>
+            </tr>
+
+            <tr>
+                <td>Genipabu</td>
+                <td>Dunas</td>
+                <td>Adrenalina</td>
+                <td>Alto</td>
+                <td>Alto</td>
+            </tr>
+
+            <tr>
+                <td>Serra de Martins</td>
+                <td>Montanha</td>
+                <td>Natureza e clima frio</td>
+                <td>Baixo</td>
+                <td>Baixo</td>
+            </tr>
+        </tbody>
     </table>
-  </section>
-  
-  
+</section>
+
+<footer>
+    <p>🌐 Projeto educativo - Acervo Mata Branca | 2025</p>
+</footer>
 
 </body>
 </html>
